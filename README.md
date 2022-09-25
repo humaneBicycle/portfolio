@@ -1,3 +1,10 @@
+# inspiration
+react three tut https://www.youtube.com/watch?v=wxvSHOrBHbw
+a simple portfolio using vanilla+threejs https://www.youtube.com/watch?v=Q7AOvWpIVHU&t
+animations will have inspiration from the video https://www.youtube.com/watch?v=IJhgZBn-LHg 
+
+installed dependencies: @react-three/fiber, @react-three/drei, threeJS, ReactJS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
