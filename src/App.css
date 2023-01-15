@@ -101,11 +101,11 @@ body {
   margin-left: 0rem;
   margin-right: 4rem;
   font-family: "Roboto Mono";
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .resume-button:hover {
   background-color: #133040;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .logo_main {
   display: flex;
@@ -128,7 +128,7 @@ body {
   width: 20px;
   height: 20px;
   color: #bac5dd;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .icon-vertical-navbar:hover {
   color: #61f8d5;
@@ -148,7 +148,7 @@ body {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   margin-bottom: 1rem;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   font-family: "Roboto Mono";
   color: #bac5dd;
   font-size: 15px;
@@ -197,11 +197,11 @@ body {
   margin-top: 3rem;
   font-family: "Roboto Mono";
   background-color: #0a192f;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .action_button_main:hover {
   background-color: #133040;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .about_me {
