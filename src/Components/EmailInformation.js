@@ -4,9 +4,9 @@ import config from '../config'
 export default function EmailInformation() {
   return (
     <div className='EmailInformation'>
-        <div className='Email'>
+        <a className='Email' href={`mailto:${config.email}`}>
             {config.email}
-        </div>
+        </a>
         <div
           style={{
             width: "1px",

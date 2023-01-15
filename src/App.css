@@ -84,7 +84,7 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  margin-left: 2.5rem;
+  margin-left: 3%;
 }
 
 .resume-button {
@@ -141,7 +141,7 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
-  margin-right: 4.5rem;
+  margin-right: 3%;
 }
 
 .Email {
@@ -254,10 +254,20 @@ body {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
-.hide{
+.Experience{
+  margin-top: 16rem;
+  margin-left: 24%;
+  color: #bac5dd;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
 
 }
-.show{
+.Experience span{
+  color: #61f8d5;
+  font-family: 'Roboto Mono';
+  font-size: 1.5rem;
+}
+.Experience_inner{
 
 }
 @media (max-width: 770px) {

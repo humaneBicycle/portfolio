@@ -6,6 +6,7 @@ import EmailInformation from "./Components/EmailInformation";
 import config from "./config.js";
 import { useState, useEffect } from "react";
 import AboutMe from "./Components/AboutMe";
+import Experience from "./Components/Experience";
 
 function App() {
   const scrollDirection = useScrollDirection();
@@ -13,7 +14,7 @@ function App() {
     <div className="app">
       <div class={`top-row ${ scrollDirection === "down" ? "hide" : "show"}`}>
         <div class="logo_main">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="logo_main_img" />
         </div>
         <div class="navbar_resume">
           <div className="">
@@ -43,6 +44,7 @@ function App() {
       </div>
 
       <AboutMe />
+      <Experience/>
     </div>
   );
 }
