@@ -1,10 +1,11 @@
 import React from 'react'
+import config from '../config'
 
 export default function EmailInformation() {
   return (
     <div className='EmailInformation'>
         <div className='Email'>
-            abhayasood99@gmail.com
+            {config.email}
         </div>
         <div
           style={{

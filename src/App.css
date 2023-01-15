@@ -12,6 +12,21 @@
   list-style: none;
   text-decoration: none;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8892b0;
+  border-radius: 20px;
+}
+
+.app {
+}
 
 body {
   color: #333;
@@ -44,7 +59,7 @@ body {
 .top-row {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: sticky;
   width: 100%;
 }
 .top-row button {
@@ -54,10 +69,10 @@ body {
 .verticalNavbar {
   color: #61f8d5;
   text-decoration: none;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
-  margin-left: 1.38rem;
+  margin-left: 2.5rem;
 }
 
 .resume-button {
@@ -74,6 +89,11 @@ body {
   margin-left: 0rem;
   margin-right: 4rem;
   font-family: "Roboto Mono";
+  transition: background-color 0.2s ease-in-out;
+}
+.resume-button:hover {
+  background-color: #133040;
+  transition: background-color 0.2s ease-in-out;
 }
 .logo_main {
   display: flex;
@@ -106,7 +126,7 @@ body {
   color: #bac5dd;
 }
 .EmailInformationMain {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   margin-right: 4.5rem;
@@ -123,43 +143,106 @@ body {
 }
 .Email:hover {
   margin-bottom: 1rem;
-  transform : translateY(-5px);
+  transform: translateY(-5px);
   color: #61f8d5;
 }
-.main{
-    position: absolute;
-    top: 20%;
-    left: 18%;
-    
-    font-family:"Roboto Mono";
-}
-.intro{
-    color:#61f8d5;  
+.main {
+  margin-left: 16%;
+  margin-top: 6%;
 
+  font-family: "Roboto Mono";
 }
-.name_main{
-    font-size: 4.5rem;
-    color:#CCD6F6;
-    font-weight: bolder;
-    font-family: "Roboto";
-    margin-top: 1rem;
+.intro {
+  color: #61f8d5;
+}
+.name_main {
+  font-size: 4.5rem;
+  color: #ccd6f6;
+  font-weight: bolder;
+  font-family: "Roboto";
+  margin-top: 1rem;
+}
+.task_main {
+  color: #8892b0;
+  font-family: "Roboto";
+  font-size: 3.5rem;
+}
+.about_main {
+  margin-top: 2rem;
+  color: #8892b0;
+  max-width: 50rem;
+  font-family: "Roboto";
+  line-height: 1.5rem;
+}
+.action_button_main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 36px;
+  padding-left: 36px;
+  border-radius: 4px;
+  border: 1px solid #61f8d5;
+  color: #61f8d5;
+  margin-top: 3rem;
+  font-family: "Roboto Mono";
+  background-color: #0a192f;
+  transition: background-color 0.2s ease-in-out;
+}
+.action_button_main:hover {
+  background-color: #133040;
+  transition: background-color 0.2s ease-in-out;
+}
 
+.about_me {
+  margin-top: 16rem;
+  margin-left: 20%;
+  color: #61f8d5;
 }
-.task_main{
-    color:#8892B0;
-    font-family: "Roboto";
-    font-size: 3.5rem;
+.about_me_head {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  font-weight: bolder;
+  color: #bac5dd;
+}
+.about_me_head span {
+  font-size: 1.5rem;
+  font-family: "Roboto Mono";
+  font-weight: bolder;
+  color: #61f8d5;
+}
+.about_me_inner {
+  display: flex;
+  width: 40rem;
+  line-height: 1.5rem;
+}
+.about_me_about {
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: #8892b0;
+  max-width: 50rem;
+  font-family: "Roboto";
+  line-height: 1.5rem;
+  font-weight: 100;
+  min-width: 35rem;
+  margin-right: 2rem;
+}
+.about_me_image{
+  height: 20rem;
+  width: 20rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+.skill_bullet{
+  line-height: 12px;
+  margin-top: 6px;
+}
+.skill_ul{
+  margin-top:1rem;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
 
-}
-.about_main{
-    margin-top:2rem;
-    color:#8892B0;
-    font-family: "Roboto";
-    max-width: 50rem;
-    font-family: 'Roboto';
-    line-height: 1.5rem;
-}
-
-@media(max-width:770px){
+@media (max-width: 770px) {
 
 }

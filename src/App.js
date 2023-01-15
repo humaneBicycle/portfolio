@@ -3,10 +3,12 @@ import Navbar from "./Components/Navbar";
 import VerticalNavbar from "./Components/VerticalNavbar";
 import logo from "./Assets/AS_logo.svg";
 import EmailInformation from "./Components/EmailInformation";
+import config from "./config.js";
+import AboutMe from "./Components/AboutMe";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <div class="top-row">
         <div class="logo_main">
           <img src={logo} alt="logo" />
@@ -16,7 +18,7 @@ function App() {
             <Navbar />
           </div>
           <div>
-          <button className="resume-button">Resume</button>
+            <button className="resume-button">Resume</button>
           </div>
         </div>
       </div>
@@ -24,18 +26,21 @@ function App() {
         <VerticalNavbar />
       </div>
       <div className="EmailInformationMain">
-
-        <EmailInformation/>
+        <EmailInformation />
       </div>
       <div className="main">
         <div className="intro">
-        Hi, my name is
-        <div className="name_main">Abhay Sood.</div>
-        <div className="task_main">I am an android and web developer.</div>
-        <div className="about_main">Welcome to my portfolio website! I am an android and web developer, dedicated to honing my skills and continuously seeking new opportunities to improve. My work, showcased on this website, browse my portfolio to see the solutions I can offer for your business or organization</div>
-        
+          Hi, my name is
+          <div className="name_main">{config.name}</div>
+          <div className="task_main">{config.intro_one_liner}</div>
+          <div className="about_main">{config.short_main_intro}</div>
+          <div>
+            <button className="action_button_main">Check out my work!</button>
+          </div>
         </div>
       </div>
+      
+      <AboutMe />
     </div>
   );
 }
