@@ -4,12 +4,14 @@ import VerticalNavbar from "./Components/VerticalNavbar";
 import logo from "./Assets/AS_logo.svg";
 import EmailInformation from "./Components/EmailInformation";
 import config from "./config.js";
+import { useState, useEffect } from "react";
 import AboutMe from "./Components/AboutMe";
 
 function App() {
+  const scrollDirection = useScrollDirection();
   return (
     <div className="app">
-      <div class="top-row">
+      <div class={`top-row ${ scrollDirection === "down" ? "hide" : "show"}`}>
         <div class="logo_main">
           <img src={logo} alt="logo" />
         </div>
@@ -39,10 +41,31 @@ function App() {
           </div>
         </div>
       </div>
-      
+
       <AboutMe />
     </div>
   );
 }
+function useScrollDirection() {
+  const [scrollDirection, setScrollDirection] = useState(null);
 
+  useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
+    }
+  }, [scrollDirection]);
+
+  return scrollDirection;
+};
 export default App;

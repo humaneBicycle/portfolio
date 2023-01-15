@@ -60,7 +60,19 @@ body {
   display: flex;
   justify-content: space-between;
   position: sticky;
+  top:0;
   width: 100%;
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+
+  /* blur */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+}
+.top-row.hide{
+  top: -6rem;
 }
 .top-row button {
   background-color: #0a192f;
@@ -242,7 +254,12 @@ body {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
+.hide{
 
+}
+.show{
+
+}
 @media (max-width: 770px) {
 
 }
