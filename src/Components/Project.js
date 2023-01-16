@@ -27,21 +27,21 @@ export default function Project({left,project}) {
     }else{
         return (
             <div className='project'>
-                <div className="project_image right"><img className="project_image" src={config.projects[0].image_url} alt="unable to load image"/></div>
+                <div className="project_image right" style={{alignItems:'flex-end'}}><img className="project_image" src={config.projects[0].image_url} alt="unable to load image"/></div>
                 {/* <div className='project_image_gradient'></div> */}
                 <div className="project_desc left">
                     <div>
-                        <div className="project_overline" >Featured Project</div>
-                        <div className="project_title">{project.title}</div>
-                        <div className="project_description">{project.description}</div>
+                        <div className="project_overline text_align--left" >Featured Project</div>
+                        <div className="project_title text_align--left">{project.title}</div>
+                        <div className="project_description" style={{textAlign:'left'}}>{project.description}</div>
                         <ul className="project_skills">{
                             project.skills.map((skill,i)=>{
                                 return(
-                                    <li key={i} className="project_skill">{skill}</li>
+                                    <li key={i} className="project_skill " style={{float:'left'}}>{skill}</li>
                                 )
                             })
                         }</ul>
-                        <button className="project_button">Learn More</button>
+                        <button className="project_button" style={{float:'left'}}>Learn More</button>
                     </div>
                 </div>
             </div>

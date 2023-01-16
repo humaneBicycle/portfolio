@@ -346,7 +346,9 @@ body {
   color: #61f8d5;
   font-size: 0.9rem;
   text-align: end;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 .project_image_gradient{
   background-color: rgba(61,248,213,1);
@@ -358,12 +360,15 @@ body {
 .right{
   right:0;
 }
+.text_align--left{
+  text-align: start!important;
+
+}
 .project_desc{
   position: absolute;
   /* top:0; */
   /* right:0; */
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   text-align: end;
   align-items: center;
   max-width: 60%;
