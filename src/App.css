@@ -26,6 +26,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -38,6 +41,10 @@ body {
   justify-self: flex-end;
   margin: 8px;
   order: 2;
+
+  /* blur */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .navbar li a {
   color: #bac5dd;
@@ -48,7 +55,7 @@ body {
 }
 .navbar li {
   margin-right: 2rem;
-  margin-top: 2rem;
+  margin-top: 2rem  ;
   display: inline-block;
   color: #61f8d5;
 
@@ -65,10 +72,11 @@ body {
   transition-property: all; 
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
+  object-fit: contain;
 
   /* blur */
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
 }
 .top-row.hide{
@@ -159,9 +167,9 @@ body {
   color: #61f8d5;
 }
 .main {
-  margin-left: 16%;
+  margin-left: 12%;
   margin-top: 6%;
-
+  margin-right: 16%;
   font-family: "Roboto Mono";
 }
 .intro {
@@ -182,7 +190,6 @@ body {
 .about_main {
   margin-top: 2rem;
   color: #8892b0;
-  max-width: 50rem;
   font-family: "Roboto";
   line-height: 1.5rem;
 }
@@ -205,9 +212,11 @@ body {
 }
 
 .about_me {
-  margin-top: 16rem;
-  margin-left: 20%;
+  margin-top: 20%;
+  margin-left: 16%;
+  margin-right: 16%;
   color: #61f8d5;
+  width: 45%;
 }
 .about_me_head {
   font-size: 1.5rem;
@@ -223,26 +232,59 @@ body {
 }
 .about_me_inner {
   display: flex;
-  width: 40rem;
   line-height: 1.5rem;
 }
 .about_me_about {
   font-size: 1rem;
   margin-top: 2rem;
+
   color: #8892b0;
-  max-width: 50rem;
   font-family: "Roboto";
   line-height: 1.5rem;
   font-weight: 100;
-  min-width: 35rem;
   margin-right: 2rem;
 }
 .about_me_image{
+  margin-top: 2rem;
+  border-radius: 8px;
+  z-index: 1;
+}
+.about_me_img_gradient{
   height: 20rem;
   width: 20rem;
   margin-top: 2rem;
   margin-right: 1rem;
+  background-color: rgba(61,248,213,0.25);
   border-radius: 8px;
+  position: absolute;
+  z-index: 2;
+
+  transition: background-color 0.3s ease-in-out;
+}
+.about_me_img_gradient:hover{
+  background-color: rgba(61,248,213,0);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about_me_img_border{
+  border: 4px solid #61f8d5;
+  border-radius: 8px;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  transition: margin 0.3s ease-in-out;
+
+}
+.about_me_img_gradient:hover ~ .about_me_img_border{
+
+  margin-top: 0rem;
+  margin-left: 1rem;
+  transition: margin 0.3s ease-in-out;
+}
+.about_me_image_container{
+  position: relative;
 }
 .skill_bullet{
   line-height: 12px;
@@ -268,6 +310,124 @@ body {
   font-size: 1.5rem;
 }
 .Experience_inner{
+
+}
+
+.projects{
+  margin-top: 16rem;
+  margin-left: 16%;
+  margin-right: 16%;
+  color: #bac5dd;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.projects span{
+  color: #61f8d5;
+  font-family: 'Roboto Mono';
+  font-size: 1.5rem;
+}
+.project{
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+  height: 20rem;
+}
+.project_image{
+    width:70%;
+    height: 37vh;
+    border-radius: 8px;
+    /* top:0;
+    left:0; */
+    position: absolute;
+}
+.project_overline{
+  font-family: "Roboto Mono";
+  color: #61f8d5;
+  font-size: 0.9rem;
+  text-align: end;
+  padding: 1rem;
+}
+.project_image_gradient{
+  background-color: rgba(61,248,213,1);
+  transition: background-color 0.3s ease-in-out;
+}
+.left{
+  left:0;
+}
+.right{
+  right:0;
+}
+.project_desc{
+  position: absolute;
+  /* top:0; */
+  /* right:0; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: end;
+  align-items: center;
+  max-width: 60%;
+}
+.project_title{
+
+  text-align: end;
+  padding-right: 1rem;
+  font-size: 1em;
+}
+.project_description{
+  background-color: #112240;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  font-size: small;
+  font-weight: 100;
+  margin-top: 0.8rem;
+  border-radius: 8px;
+
+}
+.project_skills{
+  padding: 0.7rem;
+
+}
+.project_skill{
+  padding: 0.7rem;
+  display: inline-block;
+  font-size: small;
+  font-weight: 100;
+  font-family: "Roboto";
+
+}
+.project_button{
+  color: #61f8d5;
+  border: 1px solid #61f8d5;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 18px;
+  padding-left: 18px;
+
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 0rem;
+  margin-right: 1rem;
+  background-color: #0a192f;
+
+  font-family: "Roboto Mono";
+  transition: background-color 0.3s ease-in-out;
+}
+.project_button:hover{
+  background-color: #133040;
+  transition: background-color 0.3s ease-in-out;
+}
+.projects_ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+.projects_li{
+  width: 100%;
 
 }
 @media (max-width: 770px) {

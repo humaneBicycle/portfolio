@@ -1,7 +1,7 @@
 export default{
     //general
     email:"abhayasood99@gmail.com",
-    image_url:"https://source.unsplash.com/random/",
+    image_url:"",
     //main section on the top
     name:"Abhay Sood.",
     intro_one_liner:"I am an android and web developer.",
@@ -19,4 +19,26 @@ export default{
     instagram:"https://www.instagram.com/abhay_sood__/",
     twitter:"https://twitter.com/AbhayaSood",
     linkedin:"https://www.linkedin.com/in/abhayasood/",
+
+    //projects
+    projects:[
+        {
+            title:"Admin Panel",
+            description:"An admin panel for an edtech app, built using ReactJS and Firebase. The admin can add, edit, and delete courses, and can also view the list of students enrolled in each course. The admin can also view the list of students enrolled in each course.",
+            image_url:"https://source.unsplash.com/random/",
+            skills:["ReactJS","Firebase","AWS","NodeJS","ExpressJS","MongoDB"],
+            githib_link:"",
+            live_link:""
+
+        },
+        {
+            title:"pdf reader app",
+            description:"An admin panel for an edtech app, built using ReactJS and Firebase.",
+            image_url:"https://source.unsplash.com/random/",
+            skills:["ReactJS","Firebase"],
+            githib_link:"",
+            live_link:""
+
+        },
+    ],
 }

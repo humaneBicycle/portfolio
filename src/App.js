@@ -7,6 +7,7 @@ import config from "./config.js";
 import { useState, useEffect } from "react";
 import AboutMe from "./Components/AboutMe";
 import Experience from "./Components/Experience";
+import Projects from "./Components/Projects";
 
 function App() {
   const scrollDirection = useScrollDirection();
@@ -17,9 +18,7 @@ function App() {
           <img src={logo} alt="logo" className="logo_main_img" />
         </div>
         <div class="navbar_resume">
-          <div className="">
             <Navbar />
-          </div>
           <div>
             <button className="resume-button">Resume</button>
           </div>
@@ -44,7 +43,8 @@ function App() {
       </div>
 
       <AboutMe />
-      <Experience/>
+      {/* <Experience/> */}
+      <Projects/>
     </div>
   );
 }

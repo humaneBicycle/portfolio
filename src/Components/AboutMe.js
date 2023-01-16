@@ -27,12 +27,14 @@ export default function AboutMe() {
               })}
               </ul>
             </div>
-            <div className="">
+            <div className="about_me_image_container">
+              <div className='about_me_img_gradient'/>
               <img
                 src={config.image_url}
                 alt="alt"
                 className="about_me_image"
               />
+              <div className='about_me_img_border'/>
             </div>
             <div>
               
