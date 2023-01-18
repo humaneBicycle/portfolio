@@ -1,21 +1,22 @@
 import React from 'react'
+import {Link} from "react-scroll"
 
 export default function NavBar() {
   return (
     <div>
         <ul className='navbar'>
             <li>
-            01. &nbsp;<a href="#">About</a>
+            01. &nbsp;<Link to="about_me" smooth={true} href="#">About</Link>
             </li>
             {/* <li>
-            02. &nbsp;<a href="#">Experience</a>
+            02. &nbsp;<Link to="" smooth={true} href="#">Experience</Link>
             </li> */}
             <li>
-            02. &nbsp;<a href="#">Projects</a> 
+            02. &nbsp;<Link to="projects" smooth={true} href="#">Projects</Link> 
 
             </li>
             <li>
-            03. &nbsp;<a href="#">Contact</a> 
+            03. &nbsp;<Link to="contact_me" smooth={true} href="#">Contact</Link> 
             </li>
         </ul>
         

@@ -9,19 +9,31 @@ import AboutMe from "./Components/AboutMe";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
+import { Link } from "react-scroll";
+
 
 function App() {
   const scrollDirection = useScrollDirection();
   return (
     <div className="app">
-      <div class={`top-row ${ scrollDirection === "down" ? "hide" : "show"}`}>
+      <div class={`top-row ${scrollDirection === "down" ? "hide" : "show"}`}>
         <div class="logo_main">
           <img src={logo} alt="logo" className="logo_main_img" />
         </div>
         <div class="navbar_resume">
-            <Navbar />
+          <Navbar />
           <div>
-            <button className="resume-button">Resume</button>
+            <div style={{margin:"2.3rem 4rem 0 0"}}>
+              <a
+                className="resume-button"
+                
+                href={config.resume_link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -37,16 +49,18 @@ function App() {
           <div className="name_main">{config.name}</div>
           <div className="task_main">{config.intro_one_liner}</div>
           <div className="about_main">{config.short_main_intro}</div>
-          <div>
-            <button className="action_button_main">Check out my work!</button>
+          <div className="action_button_main_head">
+            <Link to="projects" smooth={true} className="action_button_main">
+              Check Out My Work!
+            </Link>
           </div>
         </div>
       </div>
 
       <AboutMe />
       {/* <Experience/> */}
-      <Projects/>
-        <ContactMe/>
+      <Projects />
+      <ContactMe />
     </div>
   );
 }
@@ -59,7 +73,10 @@ function useScrollDirection() {
     const updateScrollDirection = () => {
       const scrollY = window.pageYOffset;
       const direction = scrollY > lastScrollY ? "down" : "up";
-      if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
+      if (
+        direction !== scrollDirection &&
+        (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)
+      ) {
         setScrollDirection(direction);
       }
       lastScrollY = scrollY > 0 ? scrollY : 0;
@@ -67,9 +84,9 @@ function useScrollDirection() {
     window.addEventListener("scroll", updateScrollDirection); // add event listener
     return () => {
       window.removeEventListener("scroll", updateScrollDirection); // clean up
-    }
+    };
   }, [scrollDirection]);
 
   return scrollDirection;
-};
+}
 export default App;

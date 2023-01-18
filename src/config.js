@@ -2,6 +2,7 @@ export default{
     //general
     email:"abhayasood99@gmail.com",
     image_url:"",
+    resume_link:"https://www.resume.com",//with https:// otherwise the link might not work
     //main section on the top
     name:"Abhay Sood.",
     intro_one_liner:"I am an android and web developer.",
@@ -52,5 +53,5 @@ export default{
 
     //contact me section
     description:"I am currently seeking employment opportunities in which I can utilize my skills and experience to make a positive impact on the organization. I am open to exploring a variety of industries and roles and am dedicated to continuously learning and growing in my career.",
-    
+
 }

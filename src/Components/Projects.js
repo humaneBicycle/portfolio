@@ -4,7 +4,7 @@ import Project from "./Project";
 
 export default function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <span>03. </span>Things I've worked on
       <ul className="projects_ul">
         {config.projects.map((proj, i) => {

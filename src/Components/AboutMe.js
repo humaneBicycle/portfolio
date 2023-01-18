@@ -3,7 +3,7 @@ import config from '../config'
 
 export default function AboutMe() {
   return (
-    <div className="about_me">
+    <div className="about_me" id='about_me'>
         <div className="about_me_head">
           <span>01.</span>&nbsp;About Me.
           <div className="about_me_inner">
@@ -37,7 +37,7 @@ export default function AboutMe() {
               <div className='about_me_img_border'/>
             </div>
             <div>
-              
+               
             </div>
           </div>
         </div>
