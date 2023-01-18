@@ -39,6 +39,18 @@ export default{
             githib_link:"",
             live_link:""
 
+        },{
+            title:"pdf reader app 1",
+            description:"An admin panel for an edtech app, built using ReactJS and Firebase.",
+            image_url:"https://source.unsplash.com/random/",
+            skills:["ReactJS","Firebase"],
+            githib_link:"",
+            live_link:""
+
         },
     ],
+
+    //contact me section
+    description:"I am currently seeking employment opportunities in which I can utilize my skills and experience to make a positive impact on the organization. I am open to exploring a variety of industries and roles and am dedicated to continuously learning and growing in my career.",
+    
 }

@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import AboutMe from "./Components/AboutMe";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
+import ContactMe from "./Components/ContactMe";
 
 function App() {
   const scrollDirection = useScrollDirection();
@@ -45,6 +46,7 @@ function App() {
       <AboutMe />
       {/* <Experience/> */}
       <Projects/>
+        <ContactMe/>
     </div>
   );
 }

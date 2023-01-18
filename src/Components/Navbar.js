@@ -7,15 +7,15 @@ export default function NavBar() {
             <li>
             01. &nbsp;<a href="#">About</a>
             </li>
-            <li>
+            {/* <li>
             02. &nbsp;<a href="#">Experience</a>
-            </li>
+            </li> */}
             <li>
-            03. &nbsp;<a href="#">Work</a> 
+            02. &nbsp;<a href="#">Projects</a> 
 
             </li>
             <li>
-            04. &nbsp;<a href="#">Contact</a> 
+            03. &nbsp;<a href="#">Contact</a> 
             </li>
         </ul>
         
