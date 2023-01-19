@@ -6,17 +6,17 @@ export default function NavBar() {
     <div>
         <ul className='navbar'>
             <li>
-            01. &nbsp;<Link to="about_me" smooth={true} href="#">About</Link>
+            01. &nbsp;<Link to="about_me" className="navbar_link" smooth={true} href="#">About</Link>
             </li>
             {/* <li>
             02. &nbsp;<Link to="" smooth={true} href="#">Experience</Link>
             </li> */}
             <li>
-            02. &nbsp;<Link to="projects" smooth={true} href="#">Projects</Link> 
+            02. &nbsp;<Link to="projects" className="navbar_link" smooth={true} href="#">Projects</Link> 
 
             </li>
             <li>
-            03. &nbsp;<Link to="contact_me" smooth={true} href="#">Contact</Link> 
+            03. &nbsp;<Link to="contact_me" className="navbar_link" smooth={true} href="#">Contact</Link> 
             </li>
         </ul>
         

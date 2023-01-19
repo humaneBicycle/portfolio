@@ -10,6 +10,7 @@ import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
 import { Link } from "react-scroll";
+import Footer from "./Components/Footer";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <div class="navbar_resume">
           <Navbar />
           <div>
-            <div style={{margin:"2.3rem 4rem 0 0"}}>
+            <div style={{margin:"2.3rem 3rem 0 0"}}>
               <a
                 className="resume-button"
                 
@@ -61,6 +62,7 @@ function App() {
       {/* <Experience/> */}
       <Projects />
       <ContactMe />
+      <Footer />
     </div>
   );
 }

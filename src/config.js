@@ -1,10 +1,13 @@
+import me from '../src/Assets/Images/me.jpg'
+
 export default{
     //general
     email:"abhayasood99@gmail.com",
-    image_url:"",
-    resume_link:"https://www.resume.com",//with https:// otherwise the link might not work
+    image_url:me,
+    resume_link:"https://docs.google.com/document/d/1QRp-e3714BBvDI_GG0zZ0cPKZwnyldiB/edit?usp=sharing&ouid=104117244294180942381&rtpof=true&sd=true",//with https:// otherwise the link might not work
+    repo_link:"https://github.com/humaneBicycle/portfolio",//link to this repo with https:// otherwise the link might not work
     //main section on the top
-    name:"Abhay Sood.",
+    name:"Abhay Sood",
     intro_one_liner:"I am an android and web developer.",
     short_main_intro:"Welcome to my portfolio website! I am an android and web developer, dedicated to honing my skills and continuously seeking new opportunities to improve. My work, showcased on this website, browse my portfolio to see the solutions I can offer for your business or organization.",
 
@@ -13,7 +16,7 @@ export default{
     p2:"I have worked on several android and web projects, including an admin panel for an edtech app, an android application for shortlisting clients based on location, and a pdf reader app. These projects have allowed me to gain valuable experience in developing secure and user-friendly software, as well as in integrating various technologies such as AWS and Firebase.",
     p3:"In addition to my technical skills, I am a dedicated and hardworking individual who is always eager to learn and improve. As a class representative at NIT Hamirpur and a volunteer for the App Team, I have developed strong leadership and teamwork skills.",
     p4:"I am looking for opportunities to showcase my skills and continue developing my abilities as a software developer. I am excited to take on new challenges and to contribute to the development of cutting-edge technologies.",
-    skills:["Java","Android","Firebase","JavaScript","ReactJS","C++"],
+    skills:["Java","kotlin","Android","Firebase","JavaScript","ReactJS","C++","AWS"],
 
     //social links
     github:"https://github.com/humaneBicycle",
@@ -24,6 +27,15 @@ export default{
     //projects
     projects:[
         {
+            title:"pdf reader app",
+            description:"An admin panel for an edtech app, built using ReactJS and Firebase.",
+            image_url:"https://source.unsplash.com/random/",
+            skills:["ReactJS","Firebase"],
+            githib_link:"",
+            live_link:""
+
+        },
+        {
             title:"Admin Panel",
             description:"An admin panel for an edtech app, built using ReactJS and Firebase. The admin can add, edit, and delete courses, and can also view the list of students enrolled in each course. The admin can also view the list of students enrolled in each course.",
             image_url:"https://source.unsplash.com/random/",
@@ -33,14 +45,6 @@ export default{
 
         },
         {
-            title:"pdf reader app",
-            description:"An admin panel for an edtech app, built using ReactJS and Firebase.",
-            image_url:"https://source.unsplash.com/random/",
-            skills:["ReactJS","Firebase"],
-            githib_link:"",
-            live_link:""
-
-        },{
             title:"pdf reader app 1",
             description:"An admin panel for an edtech app, built using ReactJS and Firebase.",
             image_url:"https://source.unsplash.com/random/",

@@ -46,12 +46,17 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-.navbar li a {
+.navbar_link{
   color: #bac5dd;
   text-decoration: none;
   font-family: "Roboto Mono";
   font-size: small;
   margin-left: -0.75rem;
+  transition: color 0.3s ease-in-out;
+}
+.navbar_link:hover {
+  color: #61f8d5;
+  transition: color 0.3s ease-in-out;
 }
 .navbar li {
   margin-right: 2rem;
@@ -108,7 +113,7 @@ body {
   align-items: center;
   margin-top: 2rem;
   margin-left: 0rem;
-  margin-right: 4rem;
+  margin-right: 1rem;
   font-family: "Roboto Mono";
   transition: background-color 0.3s ease-in-out;
 }
@@ -120,7 +125,7 @@ body {
   display: flex;
   justify-content: flex-start;
   margin-top: 2rem;
-  margin-left: 3rem;
+  margin-left: 2.5rem;
   width: 2.7rem;
   height: 2.7rem;
 }
@@ -169,7 +174,7 @@ body {
 }
 .main {
   margin-left: 12%;
-  margin-top: 6%;
+  margin-top: 8%;
   margin-right: 16%;
   font-family: "Roboto Mono";
 }
@@ -221,7 +226,9 @@ body {
   margin-right: 16%;
   color: #61f8d5;
   padding-top: 3%;
-  width: 45%;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
 }
 .about_me_head {
   font-size: 1.5rem;
@@ -254,6 +261,9 @@ body {
   margin-top: 2rem;
   border-radius: 8px;
   z-index: 1;
+  width: 20rem;
+  
+  
 }
 .about_me_img_gradient{
   height: 20rem;
@@ -263,8 +273,6 @@ body {
   background-color: rgba(61,248,213,0.25);
   border-radius: 8px;
   position: absolute;
-  z-index: 2;
-
   transition: background-color 0.3s ease-in-out;
 }
 .about_me_img_gradient:hover{
@@ -278,14 +286,16 @@ body {
   width: 20rem;
   height: 20rem;
   position: absolute;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 2rem;
+  top:2rem;
   transition: margin 0.3s ease-in-out;
+  z-index: -1;
 
 }
 .about_me_img_gradient:hover ~ .about_me_img_border{
 
-  margin-top: 0rem;
+  margin-top: 1rem;
   margin-left: 1rem;
   transition: margin 0.3s ease-in-out;
 }
@@ -337,7 +347,7 @@ body {
 .project{
   position: relative;
   margin-top: 2rem;
-  margin: 12% 0 0 0 ;
+  margin: 8% 0 0 0 ;
   width: 100%;
   height: 20rem;
 }
@@ -485,7 +495,29 @@ body {
   border: 1px solid #61f8d5;
   border-radius: 4px;
   font-family: "Roboto Mono";
+  transition: background-color 0.3s ease-in-out;
 
+
+}
+.contact_me_button:hover{
+  background-color: #133040;
+  transition: background-color 0.3s ease-in-out;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem 0;
+}
+.footer_container{
+  color: #ccd6f6;
+  font-family: "Roboto Mono";
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.645,0.045,0.355,1);
+}
+.footer_container:hover{
+  color: #61f8d5;
+  transition: color 0.3s cubic-bezier(0.645,0.045,0.355,1);
 }
 
 @media (max-width: 770px) {
