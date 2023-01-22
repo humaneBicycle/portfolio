@@ -25,6 +25,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 
+
+
 .app {
   width: 100%;
   display: flex;
@@ -359,6 +361,20 @@ body {
     left:0; */
     position: absolute;
 }
+.project_image_gradient{
+  position: relative;
+  width:70%;
+  height: 37vh;
+  border-radius: 8px;
+  background-color: rgba(61,248,213,0.25);
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+
+}
+.project_image_gradient:hover{
+  background-color: rgba(61,248,213,0);
+  transition: all 0.3s ease-in-out;
+}
 .project_overline{
   font-family: "Roboto Mono";
   color: #61f8d5;
@@ -368,10 +384,7 @@ body {
   padding-right: 1rem;
   padding-bottom: 1rem;
 }
-.project_image_gradient{
-  background-color: rgba(61,248,213,1);
-  transition: background-color 0.3s ease-in-out;
-}
+
 .left{
   left:0;
 }
@@ -394,6 +407,7 @@ body {
   text-align: end;
   align-items: center;
   max-width: 60%;
+  z-index: 2;
 }
 .project_title{
 
@@ -456,6 +470,23 @@ body {
 .projects_li{
   width: 100%;
 
+}
+.project_action{
+  display: flex;
+  justify-content: flex-end;
+  right: 0;
+  margin-right: 1rem;
+    
+}
+.project_action_icon{
+  width: 34px; 
+  transition: all 0.3s ease-in-out;
+  padding: 4px;
+  color:#ccd6f6;
+}
+.project_action_icon:hover{
+  color:#61f8d5;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact_me{

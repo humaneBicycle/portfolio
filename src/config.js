@@ -31,8 +31,8 @@ export default{
             description:"An admin panel for an edtech app, built using ReactJS and Firebase.",
             image_url:"https://source.unsplash.com/random/",
             skills:["ReactJS","Firebase"],
-            githib_link:"",
-            live_link:""
+            github_link:"https://github.com/humaneBicycle",
+            live_link:"https://github.com/humaneBicycle"
 
         },
         {
@@ -40,8 +40,8 @@ export default{
             description:"An admin panel for an edtech app, built using ReactJS and Firebase. The admin can add, edit, and delete courses, and can also view the list of students enrolled in each course. The admin can also view the list of students enrolled in each course.",
             image_url:"https://source.unsplash.com/random/",
             skills:["ReactJS","Firebase","AWS","NodeJS","ExpressJS","MongoDB"],
-            githib_link:"",
-            live_link:""
+            github_link:"https://github.com/humaneBicycle",
+            live_link:"https://github.com/humaneBicycle"
 
         },
         {
@@ -49,8 +49,8 @@ export default{
             description:"An admin panel for an edtech app, built using ReactJS and Firebase.",
             image_url:"https://source.unsplash.com/random/",
             skills:["ReactJS","Firebase"],
-            githib_link:"",
-            live_link:""
+            github_link:"https://github.com/humaneBicycle",
+            live_link:"https://github.com/humaneBicycle"
 
         },
     ],

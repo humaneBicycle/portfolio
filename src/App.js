@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import VerticalNavbar from "./Components/VerticalNavbar";
-import logo from "./Assets/AS_logo.svg";
+import logo from "./Assets/logo.svg";
 import EmailInformation from "./Components/EmailInformation";
 import config from "./config.js";
 import { useState, useEffect } from "react";
@@ -11,12 +11,13 @@ import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
 import { Link } from "react-scroll";
 import Footer from "./Components/Footer";
-
+import SplashAnimation from "./Components/SplashAnimation";
 
 function App() {
   const scrollDirection = useScrollDirection();
   return (
     <div className="app">
+      <SplashAnimation/>
       <div class={`top-row ${scrollDirection === "down" ? "hide" : "show"}`}>
         <div class="logo_main">
           <img src={logo} alt="logo" className="logo_main_img" />

@@ -10,7 +10,7 @@ export default function VerticalNavbar() {
     <div className="verticalNavbar">
       <div>
         <div className="icon-vertical-navbar" onClick={()=> window.open(config.github, "_blank")}>
-          <IconGitHub className="icon-vertical-navbar" />
+          <IconGitHub />
         </div>
         <div className="icon-vertical-navbar" onClick={()=> window.open(config.instagram, "_blank")}>
           <InstagramIcon />
