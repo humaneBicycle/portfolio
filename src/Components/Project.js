@@ -31,18 +31,34 @@ export default function Project({ left, project }) {
               })}
             </ul>
             <div className="project_action">
-              <a className="project_action_icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={project.live_link}>
-                <IconExternal />
-              </a>
-              <a className="project_action_icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={project.github_link}>
-                <IconGitHub />
-              </a>
+              {project.live_link !== "" ? (
+                <>
+                  <a
+                    className="project_action_icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.live_link}
+                  >
+                    <IconExternal />
+                  </a>
+                </>
+              ) : (
+                <></>
+              )}
+
+              {project.github_link !== "" ? (
+                <>
+                  <a
+                    href={project.github_link}
+                    className="project_action_icon"
+                    target="_blank"
+                  >
+                    <IconGitHub />
+                  </a>
+                </>
+              ) : (
+                <></>
+              )}
             </div>
             {/* <button className="project_button">Learn More</button> */}
           </div>
@@ -58,7 +74,7 @@ export default function Project({ left, project }) {
         >
           <img
             className="project_image"
-            src={config.projects[0].image_url}
+            src={project.image_url}
             alt="unable to load image"
           />
           <div className="project_image_gradient" />
@@ -100,21 +116,34 @@ export default function Project({ left, project }) {
                 className="project_action"
                 style={{ justifyContent: "flex-start" }}
               >
-                <a
-                  className="project_action_icon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={project.live_link}
-                >
-                  <IconExternal />
-                </a>
-                <a
-                  href={project.github_link}
-                  className="project_action_icon"
-                  target="_blank"
-                >
-                  <IconGitHub />
-                </a>
+                {project.live_link !== "" ? (
+                <>
+                  <a
+                    className="project_action_icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.live_link}
+                  >
+                    <IconExternal />
+                  </a>
+                </>
+              ) : (
+                <></>
+              )}
+
+              {project.github_link !== "" ? (
+                <>
+                  <a
+                    href={project.github_link}
+                    className="project_action_icon"
+                    target="_blank"
+                  >
+                    <IconGitHub />
+                  </a>
+                </>
+              ) : (
+                <></>
+              )}
               </div>
             </div>
           </div>

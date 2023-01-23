@@ -25,34 +25,53 @@ export default{
     linkedin:"https://www.linkedin.com/in/abhayasood/",
 
     //projects
-    projects:[
+    projects:[//leave links empty if not available  
         {
-            title:"pdf reader app",
-            description:"An admin panel for an edtech app, built using ReactJS and Firebase.",
-            image_url:"https://source.unsplash.com/random/",
-            skills:["ReactJS","Firebase"],
-            github_link:"https://github.com/humaneBicycle",
-            live_link:"https://github.com/humaneBicycle"
+            title:"PDF Reader App: Sangharsh",
+            description:"A freelancing project which consisted of a pdf reader app built on android that can have multiple folders nested in themself like a file explorer and several PDFs inside them. The folders and pdfs can be created, updated, and deleted from the admin app. The entire App is built on Firebase as the backend and Admob wes integrated. A referal system was designed and implemented in the app. It has more than 10k downloads on Play Store",
+            image_url:"https://ik.imagekit.io/jpnn4qofy/Portfolio/pdf-app.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674503519710",
+            skills:["Android","Java","Kotlin","Firebase","Admob"],
+            github_link:"",
+            live_link:"https://play.google.com/store/apps/details?id=com.pdf.questions"
 
         },
         {
-            title:"Admin Panel",
-            description:"An admin panel for an edtech app, built using ReactJS and Firebase. The admin can add, edit, and delete courses, and can also view the list of students enrolled in each course. The admin can also view the list of students enrolled in each course.",
-            image_url:"https://source.unsplash.com/random/",
-            skills:["ReactJS","Firebase","AWS","NodeJS","ExpressJS","MongoDB"],
-            github_link:"https://github.com/humaneBicycle",
-            live_link:"https://github.com/humaneBicycle"
+            title:"Website for Investment Firm: XumitCapital",
+            description:"I built an e-commerce website for a small business using React and Redux. The website features a clean and user-friendly interface, easy navigation. I worked on it as a freelancing project.",
+            image_url:"https://ik.imagekit.io/jpnn4qofy/Portfolio/xumit-compressed.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674496989347",
+            skills:["ReactJS","Domain Management","Netlify"],
+            github_link:"",
+            live_link:"https://xumitcapital.com/"
 
         },
         {
-            title:"pdf reader app 1",
-            description:"An admin panel for an edtech app, built using ReactJS and Firebase.",
-            image_url:"https://source.unsplash.com/random/",
-            skills:["ReactJS","Firebase"],
-            github_link:"https://github.com/humaneBicycle",
-            live_link:"https://github.com/humaneBicycle"
+            title:"Admin Panel: Full Stack Edtech App",
+            description:"An admin panel in reactJS which handles CRUD for a frontend android application which is deployed on Netlify and the backend as nodeJS server deployed on Heroku. The Video lessons for the app are uploaded to AWS S3 and are converted to various qualities using AWS Mediaconvert. The security layer is implemented using JWT Tokens. ",
+            image_url:"https://ik.imagekit.io/jpnn4qofy/Portfolio/edtech-compressed.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674496287969",
+            skills:["ReactJS","Firebase","AWS","Vercel","Netlify"],
+            github_link:"",
+            live_link:"https://quasar-edtech-admin.netlify.app/"
 
         },
+        
+        {
+            title:"Pixel Meet: Local Anonymous Chat App",
+            description:"An android application shortlists clients based on location and then they can chat anonymously. A profile is shown and the user can swipe right to chat or left to see more profiles. The whole app is built using firebase.",
+            image_url:"https://ik.imagekit.io/jpnn4qofy/Portfolio/PixelMeet.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674504047787",
+            skills:["Android","GeoFIre Library","Firebase","Firebase Auth"],
+            github_link:"https://github.com/humaneBicycle/Pixel-Meet",
+            live_link:""
+
+        },
+        // {
+        //     title:"A Fitness App: BestOfY",
+        //     description:"I developed an android fitness app called BestOfY, which allows users to access wide range of exercises and workout plans. The app also includes features such as progress tracking, workout reminders, and social sharing. The admin app is also build on android. ",
+        //     image_url:"https://source.unsplash.com/random/",
+        //     skills:["Android","Firebase","Firebase Auth"],
+        //     github_link:"",
+        //     live_link:""
+
+        // },
     ],
 
     //contact me section
