@@ -536,7 +536,9 @@ body {
 }
 .footer{
   display: flex;
-  justify-content: center;
+
+  flex-direction: column;
+  align-items: center;
   margin: 0 0 2rem 0;
 }
 .footer_container{
@@ -549,6 +551,15 @@ body {
 .footer_container:hover{
   color: #61f8d5;
   transition: color 0.3s cubic-bezier(0.645,0.045,0.355,1);
+}
+.total_visitors{
+  color: #ccd6f6;
+  font-family: "Roboto Mono";
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.build_link{
+  
 }
 
 @media (max-width: 770px) {
