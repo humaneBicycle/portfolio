@@ -15,6 +15,7 @@ import SplashAnimation from "./Components/SplashAnimation";
 
 function App() {
   const scrollDirection = useScrollDirection();
+  window.title = config.name;
   return (
     <div className="app">
       <SplashAnimation/>

@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@100;400&family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@500;400&family=Ubuntu&display=swap");
 
+:root{
+  --primary: #61f8d5;
+  --secondary: #8892b0;
+  --tertiary: #bac5dd;
+  --background: #0a192f;
+  --hover_bg:#133040;
+}
+
 *,
 *::before,
 *::after {
@@ -17,11 +25,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #0a192f;
+  background: var(--background);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #8892b0;
+  background-color: var(--secondary);
   border-radius: 20px;
 }
 
@@ -35,7 +43,7 @@ body::-webkit-scrollbar-thumb {
 
 body {
   color: #333;
-  background-color: #0a192f;
+  background-color: var(--background);
 }
 
 .navbar {
@@ -49,7 +57,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
 }
 .navbar_link{
-  color: #bac5dd;
+  color: var(--tertiary);
   text-decoration: none;
   font-family: "Roboto Mono";
   font-size: small;
@@ -57,14 +65,14 @@ body {
   transition: color 0.3s ease-in-out;
 }
 .navbar_link:hover {
-  color: #61f8d5;
+  color: var(--primary);
   transition: color 0.3s ease-in-out;
 }
 .navbar li {
   margin-right: 2rem;
   margin-top: 2rem  ;
   display: inline-block;
-  color: #61f8d5;
+  color: var(--primary);
 
   font-size: small;
   font-family: "Roboto Mono";
@@ -91,11 +99,11 @@ body {
   top: -6rem;
 }
 .top-row button {
-  background-color: #0a192f;
+  background-color: var(--background);
 }
 
 .verticalNavbar {
-  color: #61f8d5;
+  color: var(--primary);
   text-decoration: none;
   position: fixed;
   bottom: 0;
@@ -104,8 +112,8 @@ body {
 }
 
 .resume-button {
-  color: #61f8d5;
-  border: 1px solid #61f8d5;
+  color: var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 4px;
   padding-top: 8px;
   padding-bottom: 10px;
@@ -120,7 +128,7 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 .resume-button:hover {
-  background-color: #133040;
+  background-color: var(--hover_bg);
   transition: background-color 0.3s ease-in-out;
 }
 .logo_main {
@@ -143,15 +151,15 @@ body {
   margin-bottom: 2rem;
   width: 20px;
   height: 20px;
-  color: #bac5dd;
+  color: var(--tertiary);
   transition: transform 0.3s ease-in-out;
 }
 .icon-vertical-navbar:hover {
-  color: #61f8d5;
+  color: var(--primary);
   transform: translateY(-5px);
 }
 .EmailInformation {
-  color: #bac5dd;
+  color: var(--tertiary);
 }
 .EmailInformationMain {
   position: fixed;
@@ -166,13 +174,13 @@ body {
   margin-bottom: 1rem;
   transition: transform 0.3s ease-in-out;
   font-family: "Roboto Mono";
-  color: #bac5dd;
+  color: var(--tertiary);
   font-size: 15px;
 }
 .Email:hover {
   margin-bottom: 1rem;
   transform: translateY(-5px);
-  color: #61f8d5;
+  color: var(--primary);
 }
 .main {
   margin-left: 12%;
@@ -181,23 +189,23 @@ body {
   font-family: "Roboto Mono";
 }
 .intro {
-  color: #61f8d5;
+  color: var(--primary);
 }
 .name_main {
   font-size: 4.5rem;
-  color: #ccd6f6;
+  color: var(--tertiary);
   font-weight: bolder;
   font-family: "Roboto";
   margin-top: 1rem;
 }
 .task_main {
-  color: #8892b0;
+  color: var(--secondary);
   font-family: "Roboto";
   font-size: 3.5rem;
 }
 .about_main {
   margin-top: 2rem;
-  color: #8892b0;
+  color: var(--secondary);
   font-family: "Roboto";
   line-height: 1.5rem;
 }
@@ -210,15 +218,15 @@ body {
   padding-right: 36px;
   padding-left: 36px;
   border-radius: 4px;
-  border: 1px solid #61f8d5;
-  color: #61f8d5;
+  border: 1px solid var(--primary);
+  color: var(--primary);
   margin-top: 3rem;
   font-family: "Roboto Mono";
-  background-color: #0a192f;
+  background-color: var(--background);
   transition: background-color 0.3s ease-in-out;
 }
 .action_button_main:hover {
-  background-color: #133040;
+  background-color: var(--hover_bg);
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -226,7 +234,7 @@ body {
   margin-top: 20%;
   margin-left: 16%;
   margin-right: 16%;
-  color: #61f8d5;
+  color: var(--primary);
   padding-top: 3%;
   width: 65%;
   display: flex;
@@ -236,13 +244,13 @@ body {
   font-size: 1.5rem;
   font-family: "Roboto";
   font-weight: bolder;
-  color: #bac5dd;
+  color: var(--tertiary);
 }
 .about_me_head span {
   font-size: 1.5rem;
   font-family: "Roboto Mono";
   font-weight: bolder;
-  color: #61f8d5;
+  color: var(--primary);
 }
 .about_me_inner {
   display: flex;
@@ -252,7 +260,7 @@ body {
   font-size: 1rem;
   margin-top: 2rem;
 
-  color: #8892b0;
+  color: var(--secondary);
   font-family: "Roboto";
   line-height: 1.5rem;
   font-weight: 100;
@@ -283,7 +291,7 @@ body {
 }
 
 .about_me_img_border{
-  border: 4px solid #61f8d5;
+  border: 4px solid var(--primary);
   border-radius: 8px;
   width: 20rem;
   height: 20rem;
@@ -317,13 +325,13 @@ body {
 .Experience{
   margin-top: 16rem;
   margin-left: 24%;
-  color: #bac5dd;
+  color: var(--tertiary);
   font-family: 'Roboto';
   font-size: 1.5rem;
 
 }
 .Experience span{
-  color: #61f8d5;
+  color: var(--primary);
   font-family: 'Roboto Mono';
   font-size: 1.5rem;
 }
@@ -336,13 +344,13 @@ body {
   padding-top: 3%;
   margin-left: 16%;
   margin-right: 16%;
-  color: #bac5dd;
+  color: var(--tertiary);
   font-family: 'Roboto';
   font-size: 1.5rem;
   font-weight: bolder;
 }
 .projects span{
-  color: #61f8d5;
+  color: var(--primary);
   font-family: 'Roboto Mono';
   font-size: 1.5rem;
 }
@@ -377,7 +385,7 @@ body {
 }
 .project_overline{
   font-family: "Roboto Mono";
-  color: #61f8d5;
+  color: var(--primary);
   font-size: 0.9rem;
   text-align: end;
   padding-top: 1rem;
@@ -416,7 +424,7 @@ body {
   font-size: 1em;
 }
 .project_description{
-  background-color: #112240;
+  background-color: var(--background);
   padding-right: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -440,8 +448,8 @@ body {
 
 }
 .project_button{
-  color: #61f8d5;
-  border: 1px solid #61f8d5;
+  color: var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -452,13 +460,13 @@ body {
   margin-top: 1rem;
   margin-left: 0rem;
   margin-right: 1rem;
-  background-color: #0a192f;
+  background-color: var(--background);
 
   font-family: "Roboto Mono";
   transition: background-color 0.3s ease-in-out;
 }
 .project_button:hover{
-  background-color: #133040;
+  background-color: var(--background);
   transition: background-color 0.3s ease-in-out;
 }
 .projects_ul{
@@ -482,10 +490,10 @@ body {
   width: 34px; 
   transition: all 0.3s ease-in-out;
   padding: 4px;
-  color:#ccd6f6;
+  color:var(--tertiary);
 }
 .project_action_icon:hover{
-  color:#61f8d5;
+  color:var(--primary);
   transition: all 0.3s ease-in-out;
 }
 
@@ -501,29 +509,29 @@ body {
   font-size: 1rem;
   font-family: "Roboto Mono";
   font-weight: bolder;
-  color: #61f8d5;
+  color: var(--primary);
 }
 .contact_me_overline_two{
   font-size: 3rem;
   font-family: "Roboto";
   font-weight: bolder;
-  color: #ccd6f6;
+  color: var(--tertiary);
   margin: 1rem 0 1rem 0;
 }
 .contact_me_desc{
   font-size: 1rem;
   font-family: "Roboto";
   font-weight: 100;
-  color: #bac5dd;
+  color: var(--tertiary);
   margin: 0 16% 3rem 16%;
   text-align: center;
 
 }
 .contact_me_button{
   padding: 10px 18px 10px 18px;
-  background-color: #112240;
-  color: #61f8d5;
-  border: 1px solid #61f8d5;
+  background-color: var(--background);
+  color: var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 4px;
   font-family: "Roboto Mono";
   transition: background-color 0.3s ease-in-out;
@@ -549,7 +557,7 @@ body {
   transition: color 0.3s cubic-bezier(0.645,0.045,0.355,1);
 }
 .footer_container:hover{
-  color: #61f8d5;
+  color: var(--primary);
   transition: color 0.3s cubic-bezier(0.645,0.045,0.355,1);
 }
 .total_visitors{
