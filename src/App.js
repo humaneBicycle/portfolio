@@ -14,12 +14,13 @@ import Footer from "./Components/Footer";
 import SplashAnimation from "./Components/SplashAnimation";
 
 function App() {
-  const scrollDirection = useScrollDirection();
   window.title = config.name;
+  let scrollDirection = useScrollDirection();
   return (
+    <>
     <div className="app">
-      <SplashAnimation/>
       <div class={`top-row ${scrollDirection === "down" ? "hide" : "show"}`}>
+      <SplashAnimation/>
         <div class="logo_main">
           <img src={logo} alt="logo" className="logo_main_img" />
         </div>
@@ -66,6 +67,7 @@ function App() {
       <ContactMe />
       <Footer />
     </div>
+    </>
   );
 }
 function useScrollDirection() {

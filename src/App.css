@@ -99,6 +99,10 @@ body {
 .top-row.hide{
   top: -6rem;
 }
+.top-row.show{
+  top: 0;
+  position: fixed;
+}
 .top-row button {
   background-color: var(--background);
 }
